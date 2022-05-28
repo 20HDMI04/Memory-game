@@ -60,7 +60,10 @@ function onCardClicked(e) {
         combosFound++;
         previousCard = null;
         if (combosFound === 8) {
-            alert('You Win')
+            function timeFunction() {
+                setTimeout(function(){ alert("You Win!"); }, 1000);
+            }
+            timeFunction()
         }
     }
 }
