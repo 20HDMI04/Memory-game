@@ -13,8 +13,9 @@
 <body onload="load()">
     <div class="bcolor">
         <div class="flexbox">
+            <div id="count_up_timer" class="timer" onclick="setInterval(countUpTimer, 1000)">00:00:00</div>
             <div><button class="btn">Start</button></div>
-            <div id="count_up_timer" class="timer">00:00:00</div>
+            
         </div>
         <div class="row">
             <div class="card color-hidden" onclick="onCardClicked(event)"></div>
