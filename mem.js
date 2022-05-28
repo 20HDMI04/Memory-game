@@ -76,6 +76,7 @@ function onCardClicked(e) {
 let timerVariable = setInterval(countUpTimer, 1000);
 let totalSeconds = 0;
 
+
 function countUpTimer() {
     ++totalSeconds;
     const hour = Math.floor(totalSeconds / 3600);
