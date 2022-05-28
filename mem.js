@@ -3,7 +3,7 @@ let preventClick = false;
 let combosFound = 0;
 
 const colors = [
-    'pink',
+    'purple',
     'yellow',
     'red',
     'cyan',
