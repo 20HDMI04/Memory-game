@@ -3,10 +3,10 @@ body {
     background: linear-gradient(333deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     background-attachment: fixed;
 }
-
-.bcolor{
-
-}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    }
 .btn {
     background-color: rgb(187, 89, 253);
     border: none;
@@ -17,6 +17,7 @@ body {
     margin: 10px 553px;
     transition: 0.3s;
     border-radius: 3px;
+    margin-right: 30px;
   }
   
   .btn:hover {
@@ -46,6 +47,11 @@ body {
     box-shadow: inset 0px 0px 0px 1px red;
     box-sizing: border-box;
     box-shadow: none;
+}
+.timer{
+    margin-top: 10px;
+   margin-left: 0px;
+    font-size: 50px;
 }
 
 .red {
