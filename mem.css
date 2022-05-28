@@ -1,50 +1,63 @@
-.row{
-text-align: center;
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(333deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background-attachment: fixed;
 }
 
-.card{
-display: inline-block;
-width: 100px;
-height: 100px;
-background-color: #eee;
-cursor: pointer;
+.row {
+    text-align: center;
 }
 
-.card.done{
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.card.done {
     cursor: default;
 }
 
-.card.done:hover{
+.card.done:hover {
     box-shadow: inset 0px 0px 0px 1px red;
     box-sizing: border-box;
     box-shadow: none;
 }
 
-.red{
+.red {
     background-color: red;
 }
-.green{
+
+.green {
     background-color: green;
 }
-.blue{
+
+.blue {
     background-color: blue;
 }
-.orange{
+
+.orange {
     background-color: orange;
 }
-.cyan{
+
+.cyan {
     background-color: cyan;
 }
-.yellow{
+
+.yellow {
     background-color: yellow;
 }
-.pink{
+
+.pink {
     background-color: pink;
 }
-.teal{
+
+.teal {
     background-color: teal;
 }
 
-.color-hidden{
-background-color: #eee;
+.color-hidden {
+    background-color: #eee;
 }
