@@ -60,20 +60,26 @@ function onCardClicked(e) {
         combosFound++;
         previousCard = null;
         if (combosFound === 8) {
-                clearInterval(timerVariable);
-                setTimeout(function(){ alert(`You Win! Your Time IS: ${ timerVariable} `); }, 1000);
-              }
-            timeFunction()
+            clearInterval(timerVariable);
+            setTimeout(() => {
+                const hour = Math.floor(totalSeconds / 3600);
+                const minute = Math.floor((totalSeconds - hour * 3600) / 60);
+                const seconds = totalSeconds - (hour * 3600 + minute * 60);
+
+                alert(`You Win! Your Time IS: ${hour + ":" + minute + ":" + seconds} `);
+            }, 1000);
         }
     }
+}
 
-var timerVariable = setInterval(countUpTimer, 1000);
-var totalSeconds = 0;
+
+let timerVariable = setInterval(countUpTimer, 1000);
+let totalSeconds = 0;
 
 function countUpTimer() {
-  ++totalSeconds;
-  var hour = Math.floor(totalSeconds / 3600);
-  var minute = Math.floor((totalSeconds - hour * 3600) / 60);
-  var seconds = totalSeconds - (hour * 3600 + minute * 60);
-  document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
+    ++totalSeconds;
+    const hour = Math.floor(totalSeconds / 3600);
+    const minute = Math.floor((totalSeconds - hour * 3600) / 60);
+    const seconds = totalSeconds - (hour * 3600 + minute * 60);
+    document.getElementById("count_up_timer").innerHTML = hour + ":" + minute + ":" + seconds;
 }
